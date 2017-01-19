@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Expression evaluations</title>
+  </head>
+  
+  <body>
+    <h4>5 > 4 && false</h4>
+    <p>true && false</p>
+    <p>false</p>
+    
+    <h4>true && 5 * 2 > 3 + 3 * 2</h4>
+    <p>true && 10 > 3 + 6</p>
+    <p>true && 10 > 9</p>
+    <p>true && true</p>
+    
+    <h4>true && 5 * 2 > (3 + 3) * 2</h4>
+    <p>true && 5 * 2 > 6 * 2</p>
+    <p>true && 10 > 12</p>
+    <p>true && false</p>
+    <p>false</p>
+      
+    <h4>true && true || false</h4>
+    <p>true || false</p>
+    <p>true</p>
+      
+    <h4>true && (true || false)</h4>
+    <p>true && true</p>
+    <p>true</p>
+      
+    <h4>false && false || true</h4>
+    <p>false || true</p>
+    <p>true</p>
+      
+    <h4>false && (false || true)</h4>
+    <p>false && true</p>
+    <p>false</p>
+      
+    <h4>(false && false) && false && (true || false) || false</h4>
+    <p>false && false && true || false</p>
+    <p>false && true || false</p>
+    <p>false || true</p>
+    <p>true</p>
+      
+    <h4>4 == "4"</h4>
+    <p>false</p>
+      
+    <h4>4 == "4" || 4 == 4</h4>
+    <p>false || true</p>
+    <p>true</p>
+      
+    <h4>10 % 3 == 10.0 % 3</h4>
+    <p>1 == 1</p>
+    <p>true</p>
+      
+    <h4>10 * (5 / 2.0) == 10.0 * (5 / 2)</h4>
+    <p>10 * 2.5 == 10.0 * 2</p>
+    <p>25 == 20</p>
+    <p>false</p>
+      
+    <h4>10 * 5 / 2 > 10 * (5 / 2)</h4>
+    <p>50 / 2 > 10 * (5 / 2)</p>
+    <p>25 > 10 * 2</p>
+    <p>25 > 20</p>
+    <p>true</p>
+
+    <h4>2 * 2 ** 3 == (2 * 2) ** 3</h4>
+    <p>2 * 8 == 4 ** 3</p>
+    <p>16 == 64</p>
+    <p>false</p>
+    
+    <h4>(10 - 4) < +6 || -(2 * -4) > 0</h4>
+    <p>6 < +6 || -(-8) > 0</p>
+    <p>6 < 6 || 8 > 0</p>
+    <p>false || true</p>
+    <p>true</p>
+    
+  </body>
+</html>
